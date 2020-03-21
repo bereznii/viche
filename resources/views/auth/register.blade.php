@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <form class="form-signin text-center" method="POST" action="{{ route('register') }}">
             @csrf
-            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <img class="mb-4" src="{{ url('/storage/img/logo.png') }}" alt="">
             <h1 class="h3 mb-3 font-weight-normal">Please register</h1>
 
             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Your name" value="{{ old('name') }}" required autocomplete="name" autofocus>

@@ -19,4 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/chats', 'Client\ChatController@index')->name('chats');
+Route::get('/chats/view', 'Client\ChatController@view')->name('chats.view');
+Route::get('/people', 'Client\PeopleController@index')->name('people');
+Route::get('/settings', 'Client\SettingsController@index')->name('settings');
