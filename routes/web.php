@@ -23,3 +23,7 @@ Route::get('/chats', 'Client\ChatController@index')->name('chats');
 Route::get('/chats/view', 'Client\ChatController@view')->name('chats.view');
 Route::get('/people', 'Client\PeopleController@index')->name('people');
 Route::get('/settings', 'Client\SettingsController@index')->name('settings');
+
+Route::post('/send-message', 'Client\ChatController@sendMessage')->name('chat.send-message');
+
+

@@ -24,15 +24,15 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Name</label>
-                            <input type="text" class="form-control" placeholder="Enter your name">
+                            <input type="text" class="form-control" placeholder="Enter your name" value="{{ auth()->user()->name }}">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">@username</label>
-                            <input type="text" class="form-control" placeholder="Enter your username">
+                            <input type="text" class="form-control" placeholder="Enter your username" value="{{ $settings['username'] }}">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  value="{{ auth()->user()->email }}">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">

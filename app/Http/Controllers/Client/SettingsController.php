@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Client;
 
+use App\Entities\Setting;
+use App\Entities\User;
+use App\Entities\UserSetting;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -24,6 +27,10 @@ class SettingsController extends Controller
      */
     public function index()
     {
-        return view('client.settings');
+        $settings = UserSetting::with('setting')->get()->pluck('value', 'setting.name')->toArray();
+
+        return view('client.settings', [
+            'settings' => $settings
+        ]);
     }
 }

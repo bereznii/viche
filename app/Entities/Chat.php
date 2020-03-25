@@ -15,7 +15,7 @@ class Chat extends Model
 
     public function participants()
     {
-        return $this->belongsToMany('App\Entities\User')->using('App\Entities\ChatParticipants');
+        return $this->hasMany('App\Entities\ChatParticipant');
     }
 
     public function messages()

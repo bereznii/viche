@@ -11,13 +11,13 @@
         </div>
         <div class="col-12 col-sm-12">
             <ul class="list-group">
-                @foreach(range(0, 15) as $chat)
+                @foreach($users as $user)
                     <li class="list-group-item d-flex flex-row people-list-item">
                         <div class="people-photo-block mr-2">
                             <img class="chat-photo" src="{{ url('/storage/img/esenin.jpg') }}">
                         </div>
                         <div class="people-name-block d-flex flex-column justify-content-center">
-                            <p class="mb-0">Name Surname</p>
+                            <p class="mb-0">{{ $user->name }}</p>
                         </div>
                     </li>
                 @endforeach

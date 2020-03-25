@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 
+use App\Entities\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -24,6 +25,10 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        return view('client.people');
+        $users = User::select(['id', 'name'])->get();
+
+        return view('client.people', [
+            'users' => $users
+        ]);
     }
 }
