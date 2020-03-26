@@ -25,5 +25,6 @@ Route::get('/people', 'Client\PeopleController@index')->name('people');
 Route::get('/settings', 'Client\SettingsController@index')->name('settings');
 
 Route::post('/send-message', 'Client\ChatController@sendMessage')->name('chat.send-message');
+Route::patch('/update-settings', 'Client\SettingsController@update')->name('settings.update');
 
 

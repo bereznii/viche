@@ -18,7 +18,7 @@
                                 </div>
                                 <div class="chat-message-block d-flex flex-column justify-content-center">
                                     <h5>{{ $chat->name }}</h5>
-                                    <p>Last message... &#183; 21 Feb</p>
+                                    <p>{{ $chat->lastMessage }} {{ $chat->lastMessageTime }}</p>
                                 </div>
                             </div>
                         </a>

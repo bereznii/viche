@@ -68,7 +68,21 @@ SETTINGS
 
 .custom-file {
     width: 90%;
+}
 
+.image-cropper {
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-cropper img {
+    object-fit: cover;
+    border-radius:50%;
+    width: 9rem;
+    height: 9rem;
 }
 
 /**

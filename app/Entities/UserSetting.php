@@ -13,6 +13,12 @@ class UserSetting extends Model
      */
     protected $table = 'user_settings';
 
+    public $fillable = [
+        'value',
+        'user_id',
+        'setting_id'
+    ];
+
     public function setting()
     {
         return $this->belongsTo('App\Entities\Setting', 'setting_id');

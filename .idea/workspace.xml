@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7322446c-8501-4f4b-b7f0-5966c38e0acd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Entities/Chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/Chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/UserSetting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/UserSetting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/ChatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/ChatController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/PeopleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/PeopleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Client/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Client/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_22_112136_create_user_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_22_112136_create_user_settings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/chat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/chats-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/chats-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/people.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/people.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/settings.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/chat-footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/chat-footer.blade.php" afterDir="false" />
@@ -180,7 +174,8 @@
       <workItem from="1583696726427" duration="2210000" />
       <workItem from="1584871393145" duration="6206000" />
       <workItem from="1584885068578" duration="10000" />
-      <workItem from="1585163677436" duration="2939000" />
+      <workItem from="1585163677436" duration="3297000" />
+      <workItem from="1585231729109" duration="5042000" />
     </task>
     <servers />
   </component>
@@ -188,13 +183,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="147" y="127" width="1673" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585165864036">
+    <state x="147" y="127" width="1673" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585235826659">
       <screen x="47" y="27" width="1873" height="1053" />
     </state>
-    <state x="147" y="127" width="1673" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/47.27.1873.1053/3840.312.1366.768/1920.0.1920.1080@47.27.1873.1053" timestamp="1585165864036" />
+    <state x="147" y="127" width="1673" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/47.27.1873.1053/3840.312.1366.768/1920.0.1920.1080@47.27.1873.1053" timestamp="1585235826659" />
     <state x="629" y="284" width="709" height="538" key="find.popup" timestamp="1585164252236">
       <screen x="47" y="27" width="1873" height="1053" />
     </state>
     <state x="629" y="284" width="709" height="538" key="find.popup/47.27.1873.1053/3840.312.1366.768/1920.0.1920.1080@47.27.1873.1053" timestamp="1585164252236" />
+    <state x="708" y="385" width="540" height="343" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585235264216">
+      <screen x="47" y="27" width="1873" height="1053" />
+    </state>
+    <state x="708" y="385" width="540" height="343" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/47.27.1873.1053/3840.312.1366.768/1920.0.1920.1080@47.27.1873.1053" timestamp="1585235264216" />
   </component>
 </project>

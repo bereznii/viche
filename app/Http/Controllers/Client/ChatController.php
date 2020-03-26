@@ -6,6 +6,7 @@ use App\Entities\Chat;
 use App\Entities\ChatParticipant;
 use App\Entities\Message;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Http\Request;
 
@@ -32,6 +33,14 @@ class ChatController extends Controller
             $query->where('user_id', auth()->user()->id);
         })->get();
 
+        $chats->transform(function ($item, $key) {
+            $item->lastMessage = $item->messages->last()->message ?? '';
+
+            $updateAt = $item->messages->last()->updated_at ?? null;
+            $item->lastMessageTime = isset($updateAt) ? '·' . Carbon::parse($updateAt)->format('d M') : '';
+            return $item;
+        });
+
         return view('client.chats-list', [
             'chats' => $chats
         ]);
@@ -44,11 +53,13 @@ class ChatController extends Controller
     public function view($id = null)
     {
         $chatId = request('id', $id);
+        $chat = Chat::find($chatId);
         $messages = Message::where('chat_id', $chatId)->get();
 
         return view('client.chat', [
             'messages' => $messages,
-            'chatId' => $chatId
+            'chatId' => $chatId,
+            'chat' => $chat
         ]);
     }
 

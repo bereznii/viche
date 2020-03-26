@@ -33,7 +33,7 @@
 
                 @if(url()->current() == route('chats.view'))
                     <a href="{{ route('chats') }}">
-                        <i class="fas fa-angle-left"></i> {{ auth()->user()->name }}
+                        {{ $chat->name }}
                     </a>
                 @endif
 
